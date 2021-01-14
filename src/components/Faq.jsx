@@ -6,7 +6,7 @@ function Faq() {
       <div className="faq">
         <h2 className="faq__question">
           <span className="faq__icon">Q. </span>
-          <span className="faq__text">XXXXXXXX</span>
+          <span className="faq__text">テスト</span>
         </h2>
       </div>
       <div className="choice">
