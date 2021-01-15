@@ -1,10 +1,10 @@
 import React from "react";
 
-function Button() {
+function Button(props) {
   return (
     <div className="button">
       <button className="button__item" type="button">
-        NEXT
+        {props.bttText}
       </button>
     </div>
   );

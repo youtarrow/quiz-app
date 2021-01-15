@@ -1,10 +1,10 @@
 import React from "react";
 
-function Modal() {
+function Modal(props) {
   return (
     <div className="modal">
       <h2 className="modal__title">Score</h2>
-      <p className="modal__num">1/3</p>
+      <p className="modal__num">{props.num}</p>
       (*´ﾟДﾟ)ｙ━･~　ﾌﾟﾊｧ
     </div>
   );
