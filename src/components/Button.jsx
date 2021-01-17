@@ -1,10 +1,11 @@
 import React from "react";
+import Questions from "../Questions.json";
 
-function Button(props) {
+function Button() {
   return (
     <div className="button">
       <button className="button__item" type="button">
-        {props.bttText}
+        {Questions.bttnText[0]}
       </button>
     </div>
   );
