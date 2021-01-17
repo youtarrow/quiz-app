@@ -7,9 +7,9 @@ import Modal from "./components/Modal";
 function App() {
   return (
     <div className="App">
-      <Faq comment="宇宙人だな" />
-      <Button bttText="必ず「ワレワレは・・・」て言ってしまう" />
-      <Modal num="IPPON!" />
+      <Faq />
+      <Button />
+      <Modal />
     </div>
   );
 }

@@ -1,13 +1,14 @@
 import React from "react";
+import Questions from "../Questions.json";
 
-function Faq(props) {
+function Faq() {
   return (
     <section>
       <div className="faq">
         <h2 className="faq__question">
           <span className="faq__icon">Q. </span>
           <span className="faq__text">
-            コンビニのレジで「おや、コイツ{props.comment}
+            コンビニのレジで「おや、コイツ{Questions.questionText[0]}
             」と思ってしまう店員とは？
           </span>
         </h2>
