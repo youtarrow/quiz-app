@@ -16,11 +16,10 @@ function App() {
     const answerData = Questions.QandA[count].A;
     if (selectData === answerData) {
       console.log("good!");
-      const correctNum = count + 1;
-      console.log(correctNum);
     } else {
       console.log("bad...");
     }
+    console.log(count);
   };
 
   const lenNum = Questions.QandA.length;
@@ -29,7 +28,7 @@ function App() {
     <div className="App">
       <Faq count={count} />
       <Button count={count} nextStep={nextStep} lenNum={lenNum} />
-      <Modal />
+      <Modal count={count} />
     </div>
   );
 }
