@@ -1,4 +1,7 @@
 {
-    "questionText": ["aaaaaaa","bbbbbb","cccccc"],
-    "bttnText"    : ["NEXT","FINISH!"]
+    "QandA": [
+        {"Q": "aaaaaa", "A": "NO"},
+        {"Q": "bbbbbb", "A": "YES"},
+        {"Q": "cccccc", "A": "NO"}
+    ]
 }
