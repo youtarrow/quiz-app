@@ -6,7 +6,9 @@ function Modal(props) {
   return (
     <div className="modal">
       <h2 className="modal__title">Score</h2>
-      <p className="modal__num">{Questions.QandA.length + "/" + "1"}</p>
+      <p className="modal__num">
+        {Questions.QandA.length + "/" + props.addCount}
+      </p>
       (*´ﾟДﾟ)ｙ━･~　ﾌﾟﾊｧ
     </div>
   );
