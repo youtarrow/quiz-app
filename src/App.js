@@ -8,7 +8,7 @@ import Questions from "./Questions.json";
 
 function App() {
   const [count, setCount] = useState(0);
-  let addCount = 0;
+  const [point, setPoint] = useState(0);
 
   // ボタン下押しで次の問題を出す・正解/不正解を選定
   const nextStep = () => {
@@ -22,7 +22,7 @@ function App() {
     const answerData = Questions.QandA[count].A;
     if (selectData === answerData) {
       console.log("good!");
-      addCount++;
+      setPoint(point + 1);
     } else {
       console.log("bad...");
     }
@@ -34,7 +34,7 @@ function App() {
     <div className="App">
       <Faq count={count} />
       <Button count={count} nextStep={nextStep} lenNum={lenNum} />
-      <Modal addCount={addCount + count} />
+      <Modal point={point} />
     </div>
   );
 }
